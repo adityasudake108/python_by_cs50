@@ -21,7 +21,7 @@ else:
 # sys.exit("Please provide a name")   This will exit the program and print the message.
 
 
-if len(sys.argv) < 2:                           ### Method 2
+if len(sys.argv) < 2:                           
     sys.exit("Please provide a name")
 
 for arg in sys.argv[1:]:
