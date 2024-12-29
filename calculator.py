@@ -13,7 +13,7 @@
 
 def main():
     x = int (input("What's X? "))
-    print("X squared is", square(x))
+    print("square of", x ,"is", square(x))
 
 def square(n):
     return n * n
