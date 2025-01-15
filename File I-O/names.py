@@ -21,6 +21,6 @@
 names = []
 
 with open("names.txt") as file:
-    for line in sorted(file, reverse=True):
+    for line in sorted(file): # by using "reverse=True" in sorted() function, we can sort the names in descending order
         print(line.rstrip())
 
