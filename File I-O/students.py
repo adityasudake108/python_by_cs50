@@ -30,10 +30,10 @@ with open ("students.csv") as file:
         student = {"name": name, "house":house}
         students.append(student)
 
-def get_name(student):
-    return student["name"]
+# def get_name(student):
+#     return student["name"] # we use key word lamda to make the code more concise
 
-for student in sorted(students, key=get_name):
+for student in sorted(students, key=lambda student: student["name"]):
     print(f"{student['name']} is in {student['house']}")  
 
 # This code reads student names and houses from students.csv, stores them in a list of dictionaries,
